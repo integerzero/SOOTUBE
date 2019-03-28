@@ -1,0 +1,22 @@
+{
+  "name": "sootube",
+  "version": "1.0.0",
+  "description": "Cloning youtube with Vanilla and nodeJS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/integerzero/sootube.git"
+  },
+  "author": "Integerzero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/integerzero/sootube/issues"
+  },
+  "homepage": "https://github.com/integerzero/sootube#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts":{
+    "start": "node index.js"
+  }
+}
