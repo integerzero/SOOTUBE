@@ -1,4 +1,5 @@
 import express from "express";
+import logger from "morgan";
 const app = express();
 
 const PORT = 4000;
@@ -9,12 +10,13 @@ const handleHome = (req, res) => res.send('hello from home');
 
 const handleProfile = (req, res) => res.send("You are on profile");
 
-const betweenHome = (req, res, next) => {
-    console.log("I'm middleware");
-    next();
-}
+app.use(cookieParser);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(helmet());
+app.use(logger("dev"));
 
-app.get("/", betweenHome, handleHome);
+app.get("/", handleHome);
 
 app.get("/profile", handleProfile);
 
