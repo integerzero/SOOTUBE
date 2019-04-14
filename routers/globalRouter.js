@@ -6,7 +6,7 @@ import { join, login, logout, postJoin, postLogin } from "../controllers/userCon
 const globalRouter = express.Router();
 
 globalRouter.get(routes.join, join);
-globalRouter.post(routes.join, postJoin);
+globalRouter.post(routes.join, postJoin, postLogin);
 
 globalRouter.get(routes.login, login);
 globalRouter.post(routes.login, postLogin);
