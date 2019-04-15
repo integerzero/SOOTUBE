@@ -2,7 +2,15 @@ import express from "express";
 import passport from "passport";
 import routes from "../routes";
 import { home, search } from "../controllers/videoController";
-import { join, login, logout, postJoin, postLogin, githubLogin, postGithubLogIn } from "../controllers/userController";
+import { 
+    join, 
+    login, 
+    logout, 
+    postJoin, 
+    postLogin, 
+    githubLogin, 
+    postGithubLogIn 
+} from "../controllers/userController";
 import { onlyPublic, onlyPrivate } from "../middleware";
 
 const globalRouter = express.Router();

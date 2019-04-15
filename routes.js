@@ -63,6 +63,6 @@ const routes = {
     },
     gitHub: GITHUB,
     githubCallback: GITHUB_CALLBACK
-}
+};
 
 export default routes;
